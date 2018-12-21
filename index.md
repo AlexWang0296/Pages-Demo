@@ -3,7 +3,12 @@
 You can use the [editor on GitHub](https://github.com/AlexWang0296/Pages-Demo/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
+### Latex 文件比较
+工具： latexdiff
+命令： 不对数学公式进行标注，不对 ection 和 subsection 进行比较，可以消除绝大多编译数错误
+```latex
+latexdiff  --math-markup=0  --exclude-textcmd="section,subsection"  origin.tex new.tex > diff2.tex
+```
 ### Publishing 发表
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
